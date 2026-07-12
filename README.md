@@ -44,12 +44,8 @@ Right now, I'm keeping things clean and simple:
 ## 📚 What's Inside the Curriculum?
 
 * Module 1: Introduction to Networking (The absolute basics)
-* Module 2: Network Devices (Hubs, Switches, Routers)
-* Module 3: IP Addressing & Classes
-* Module 4: Public vs. Private IPs
-* Module 5: The Packet Journey Simulation
-* Module 6: Subnetting *(Work in progress)*
-* Module 7: The Final Quiz
+(still on process and right now..only module one is finished..remaining coming soon)
 
-* ---author***
+
+##---author***
 * Sarishma
