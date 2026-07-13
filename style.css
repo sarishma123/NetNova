@@ -168,7 +168,7 @@ header {
 }
 
 .planet {
-    font-size: 220px;
+    font-size: 50px;
     animation: float 5s ease-in-out infinite;
 }
 
@@ -197,5 +197,202 @@ header {
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(12px); }
+     50% { transform: translateY(12px); }
+}
+
+
+/* ================= WHY NETNOVA ================= */
+
+.why-netnova{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:120px auto;
+
+    text-align:center;
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    width:60%;
+
+    margin:auto;
+
+    color:var(--gray);
+
+    line-height:1.8;
+}
+
+/* ================= Feature Grid ================= */
+
+.feature-container{
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card{
+    background: rgba(255, 255, 255, .03);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    padding: 28px 22px;
+    text-align: left;
+    transition: 0.35s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-6px);
+    border-color: rgba(59, 130, 246, .4);
+    box-shadow: 0 0 35px rgba(59, 130, 246, .18);
+}
+
+.feature-card i{
+    font-size: 26px;
+    color: var(--secondary);
+    margin-bottom: 12px;
+}
+
+.feature-card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-card p{
+    color: var(--gray);
+    line-height: 1.8;
+    font-size: 15.5px;
+}
+
+/* ================= Page Footer ================= */
+.page-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+/* ================= Accessibility Helper ================= */
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ================= Theme Toggle (CSS hooks) ================= */
+:root{
+    color-scheme: dark;
+}
+
+body[data-theme="light"]{
+    color-scheme: light;
+
+    --bg-color: #F8FAFF;
+    --card-color: #FFFFFF;
+    --primary: #2563EB;
+    --secondary: #0891B2;
+
+    --white: #0B1220;
+    --gray: #475569;
+    --glass: rgba(0,0,0,.04);
+}
+
+body[data-theme="light"] .background-glow{
+    background:
+        radial-gradient(circle at top left, #2563EB25, transparent 40%),
+        radial-gradient(circle at bottom right, #0891B225, transparent 40%),
+        #F8FAFF;
+}
+
+.theme-toggle{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.04);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.25s ease;
+    font-weight: 600;
+}
+
+body[data-theme="light"] .theme-toggle{
+    border: 1px solid rgba(2,6,23,.12);
+    background: rgba(2,6,23,.03);
+}
+
+.theme-toggle:hover{
+    transform: translateY(-1px);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 980px){
+    .hero{
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 110px;
+    }
+
+    .hero-content, .hero-image{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 50px;
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+
+    .feature-container{
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul{
+        gap: 18px;
+    }
+
+    .page-footer{
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 520px){
+    .navbar{
+        padding: 14px 18px;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .hero h1{
+        font-size: 38px;
+    }
+
+    .theme-toggle{
+        padding: 9px 12px;
+        font-size: 14px;
+    }
 }
