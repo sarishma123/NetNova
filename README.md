@@ -6,7 +6,7 @@ Instead of just staring at blocks of text, you can actually interact with the co
 
 ---
 
-## 📖 Why I'm Building This
+## 📖 Why I'm Building This:
 
 Let's face it: learning networking is usually pretty tough because most textbooks just make you memorize endless definitions. 
 
