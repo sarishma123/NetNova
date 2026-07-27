@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetNova - Network Explorer</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,9 +25,7 @@
 
             <ul>
                 <li><a href="#top">Home</a></li>
-                <li><a href="#journey">Journey</a></li>
-                <li><a href="#learn">Learn</a></li>
-                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#journey">Learn</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
         </nav>
@@ -40,17 +35,18 @@
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
                 <p class="tag">🌍 Welcome, Explorer</p>
-                <h1 id="hero-title">Discover The Invisible World Behind Every Click.</h1>
+                <h1 id="hero-title">Discover the Invisible World Behind Every Click.</h1>
 
                 <p class="description">
-                    Learn Networking Through Visual Examples. Understanding networking doesn't have to be difficult.
-                    This project was created to help beginners understand computer networks using simple explanations,
-                    interactive animations, and practical activities.
+                    Networking doesn't have to be confusing. This is where you
+                    learn how the internet actually works — through simple explanations,
+                    visual examples, and hands-on activities. Whether you're just curious
+                    or planning a career in tech, you're in the right place.
                 </p>
 
                 <div class="buttons">
-                    <button class="primary" type="button">🚀 Begin The Journey</button>
-                    <button class="secondary" type="button">Learn More</button>
+                    <button class="primary" type="button" onclick="document.getElementById('journey').scrollIntoView({behavior:'smooth'})">🚀 Begin The Journey</button>
+                    <button class="secondary" type="button" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Learn More</button>
                 </div>
             </div>
 
@@ -71,8 +67,9 @@
                 <h2 id="why-title">Why Choose NetNova?</h2>
 
                 <p>
-                    Learning networking shouldn't feel confusing. NetNova focuses on making every concept simple,
-                    interactive, and easy to understand.
+                    Learning networking should feel approachable, not overwhelming.
+                    NetNova breaks every concept into simple, interactive lessons
+                    so anyone can follow along.
                 </p>
             </div>
 
@@ -103,12 +100,6 @@
             </div>
         </section>
 
-        <!-- Lightweight placeholders so nav links feel intentional -->
-        <section id="journey" class="sr-only" aria-hidden="true"></section>
-        <section id="learn" class="sr-only" aria-hidden="true"></section>
-        <section id="quiz" class="sr-only" aria-hidden="true"></section>
-
-
         <!-- ================= LEARNING JOURNEY ================= -->
 
         <section class="journey" id="journey">
@@ -118,8 +109,8 @@
                 <h2>Your Learning Journey</h2>
 
                 <p>
-                    Every topic builds on the previous one. Follow the roadmap
-                    step by step and strengthen your networking knowledge.
+                    Every topic builds on the last. Follow the roadmap,
+                    one step at a time, and you'll be networking like a pro.
                 </p>
 
             </div>
@@ -127,99 +118,64 @@
             <div class="journey-container">
 
                 <div class="journey-card active">
-
                     <div class="step-number">01</div>
-
                     <i class="fa-solid fa-network-wired"></i>
-
                     <h3>Networking Basics</h3>
-
                     <p>
-                        Learn what a computer network is and why it is important.
+                        What a network is, how devices talk to each other,
+                        and why it all matters.
                     </p>
-
-                    <a href="lessons/01-what-is-a-network.html">Start Module →</a>
-
+                    <a href="lesson/lesson1.html">Start Module →</a>
                 </div>
 
                 <div class="journey-card">
-
                     <div class="step-number">02</div>
-
                     <i class="fa-solid fa-router"></i>
-
                     <h3>Network Devices</h3>
-
                     <p>
-                        Understand routers, switches, hubs, and access points.
+                        Routers, switches, hubs, and access points —
+                        what they do and why they're important.
                     </p>
-
-                    <span class="locked">🔒 Coming Soon</span>
-
                 </div>
 
                 <div class="journey-card">
-
                     <div class="step-number">03</div>
-
                     <i class="fa-solid fa-globe"></i>
-
                     <h3>How the Internet Works</h3>
-
                     <p>
-                        Discover how data travels across the internet.
+                        Follow the path data takes as it travels
+                        across the globe.
                     </p>
-
-                    <span class="locked">🔒 Coming Soon</span>
-
                 </div>
 
                 <div class="journey-card">
-
                     <div class="step-number">04</div>
-
                     <i class="fa-solid fa-location-dot"></i>
-
                     <h3>IP Address</h3>
-
                     <p>
-                        Learn IPv4, IPv6, public and private addressing.
+                        IPv4, IPv6, public and private addresses —
+                        explained simply.
                     </p>
-
-                    <span class="locked">🔒 Coming Soon</span>
-
                 </div>
 
                 <div class="journey-card">
-
                     <div class="step-number">05</div>
-
                     <i class="fa-solid fa-diagram-project"></i>
-
                     <h3>IP Classes</h3>
-
                     <p>
-                        Understand Class A, B, C, D and E using visuals.
+                        Class A through E, with clear visuals
+                        to make sense of it all.
                     </p>
-
-                    <span class="locked">🔒 Coming Soon</span>
-
                 </div>
 
                 <div class="journey-card">
-
                     <div class="step-number">06</div>
-
                     <i class="fa-solid fa-box"></i>
-
                     <h3>Packet Journey</h3>
-
                     <p>
-                        Visualize how packets travel from one device to another.
+                        Watch how data packets travel from
+                        one device to another step by step.
                     </p>
-
-                    <span class="locked">🔒 Coming Soon</span>
-
                 </div>
 
             </div>
